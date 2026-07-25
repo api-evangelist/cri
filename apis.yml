@@ -1,8 +1,25 @@
 aid: cri
-name: CRI
-description: 'CRI is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cri.png
+name: Carr, Riggs & Ingram (CRI)
+description: 'Carr, Riggs & Ingram (CRI) is a top-25 nationally ranked accounting and advisory firm
+  headquartered in Alabama, operating 70+ locations across 13 states plus Mexico. The firm delivers
+  audit and attest, tax, and advisory services (cybersecurity, fraud and forensics, valuations, and
+  transaction advisory) to more than 18 industries, alongside value add-on subsidiaries including CRI
+  Advanced Analytics, CRI CFO Hub, and CRI M&A Advisors, and is a member of PrimeGlobal. It was surfaced
+  via the VC-portfolio pipeline and enriched here; note that criadv.com is a professional-services
+  accounting firm, not a Bessemer-backed fintech startup, so the portfolio-lead tagging is a domain
+  false-positive. No public API, developer portal, or documentation surface exists.'
 url: https://raw.githubusercontent.com/api-evangelist/cri/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,21 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: 'criadv.com resolves to Carr, Riggs & Ingram, an accounting/advisory firm with no
+  public API or developer surface; VC-portfolio domain match is a false-positive. No API artifacts are
+  derivable without fabrication.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Fintech
+- Accounting
+- Advisory
+- Tax
+- Audit
+- Consulting
+- Financial Services
+- Professional Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cri-domain-security.yml
 - type: Website
   url: https://www.criadv.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
