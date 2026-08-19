@@ -30,7 +30,7 @@ x-tier-reason: portfolio-lead
 x-enrichment-note: 'criadv.com resolves to Carr, Riggs & Ingram, an accounting/advisory firm with no
   public API or developer surface; VC-portfolio domain match is a false-positive. No API artifacts are
   derivable without fabrication.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
